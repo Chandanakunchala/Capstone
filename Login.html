@@ -1,83 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Login form design</title>
-        <style>
-            div{
-               padding: 15px;
-               margin: 15px;
-               font-family: 'Times New Roman', Times, serif;
-               width: 300px;
-               
-            }
-        .container{
-            margin:auto;
-            width:500px;
-            max-width:90%;
-        }
-        .container form{
-            width:100%;
-            height:100%;
-            padding:20px;
-            background-color: white;
-            border-radius: 4px;
-            box-shadow: 0 8px 16px rgba(0 0 0 3);
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<title>Login!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   <link rel="stylesheet" type="text/css" href="login.css">
+   
+	<!--link rel="stylesheet" href="homepage.css"-->
+</head>
+<body>
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="header_logo">
+						<a href="homepage.html"><span>ATOS</span>SHOPPIE</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<nav class="header_menu">
+						<ul>
+							<li ><a href="Homepage.html"><i class="fa fa-home"></i>Home</a></li>
+							<li ><a href="fashion.html">Fashion</a></li>
+							<li><a href="electronics.html">Electronics</a></li>
+							<li><a href="#">Home & Kitchen</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
+							<li><a href="cartpage1.html"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</nav>
+				</div>
 
-        }
-        .container form h1{
-            text-align: center;
-            margin-bottom: 24px;
-            color:brown;
-        }
-        .container form.form-control{
-            width:100%;
-            height:40px;
-            background-color: white;
-             border-radius:4px ;
-             border:1px solid silver;
-             margin:10px 0 18px 0;
-             padding:0 10px;
-             }
-             .container form.btn{
-                 margin-left:50%;
-                 transform:translateX(-50%);
-                 width:120px;
-                 height:34px;
-                 border: none;
-                 outline: none;
-                 background-color: green;
-                 cursor: pointer;
-                 font-size: 16px;
-                 text-transform: uppercase;
-                 color: white;
-                 transition: .3s;
-                  }
-                
-        </style>
-
-
-    
-        </head>
-        <body>
-            <div class="container">
-                <form action="">
-                    <h1>Login form</h1>
-                    <div class="form-group">
-                        <lable for=" ">User Name</lable>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <lable for=" ">PassWord</lable>
-                        <input type="text" class="form-control" required>
-                    </div>
-                    
-                   
-                    <input style="background-color:chartreuse;" type="submit" class="btn" value="Login">
-                  <a href="Forget PassWord.html">Forget PassWord</a>
-                    
-                </form>
-            </div>
-        </body>
+				
+			</div>
+		</div>
+	</header>
+	
+	<section class="login">
+	<div class="container">
+		<div class="row property_gallery">	
+			<div class="one">
+			<h1 align="center">Login!!</h1>
+				<div class="username">
+					<h5>User Name <i class="fa fa-user"></i></h5>
+					<div class="input-field">
+						<input type = "text" maxlength="50" class="las la-search" placeholder="Email/Username"><br></br>
+					</div>
+				</div>
+			
+				<div class = "Password">
+					<h5>Password<i class="fa fa-lock"></i></h5>
+					<div class="input-field">
+						<input type="Password" maxlength="15" placeholder="Password"><br></br>
+					</div>
+				</div>
+				<div class="login1">
+				<h4><a href="homepage.html"><button onclick="login()">Login</button></a></h4>
+				</div>
+		</div>
+	</div>
+	</div>
+	</section>
+	<h3><a href="createaccount.html"><button onclick="createacc()">Create Account</a></h3>
+	<section class="footer spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="footer_about">
+						<div class="footer_logo">
+							<a href="homepage.html">ATOS <span>shoppie.</span></a>
+						</div>
+						<p>Loren Ipsum is simply dummy text of the printing and typesetting industry.Loren Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						<div class="footer_social">
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-whatsapp"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3">
+					<div class="footer_widget">
+						<h6>Quick Links</h6>
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Blogs</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3">
+					<div class="footer_widget">
+						<h6>Accounts</h6>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="#">Wishlist</a></li>
+							<li><a href="#">Checkout</a></li>
+							<li><a href="homepage.html">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-3">
+					<div class="footer_widget">
+						<h6>Support</h6>
+						<ul>
+							<li><a href="#">Frequently Asked Questions</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Report a Payment Issue	</a></li>
+							<li><a href="#">24/7 Support</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="footer_bottom text-center py-4">
+		<p class="mb-0">
+			Copyright &copy; 2022 ATOS shoppie.All rights reserved.Design by
+			<a href="homepage.html">ATOS shopiee.</a>
+		</p>
+	</div>
+					
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdjns.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="jquery.countdown.min.js"></script>
+<script type="text/javascript" src="Homepage.js"></script>  				
+</body>
 </html>
